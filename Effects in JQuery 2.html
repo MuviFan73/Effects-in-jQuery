@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title>Effects in JQuery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <h2 id="Ih2">Effects JQuery</h2>
+
+            
+            <button id="btn1">Click me 1!</button>
+            
+            
+            <div id="cube" class="mycube">
+                <p>CUBE</p>
+            </div>         
+            
+        </body>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script>
+        $(document).ready(function(){
+
+            $("#btn1").click(function(){
+            
+            $("#cube").animate({
+             left:'150px',
+             opacity:'1',  
+             width:'100px',
+             height:'100px'
+            },1000)
+
+            });
+        }); 
+        </script>
+</html>
